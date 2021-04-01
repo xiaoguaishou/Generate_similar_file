@@ -1,32 +1,23 @@
-#!/bin/bash
-declare -i num1=1
-declare -i num2=1
-declare -i num3=1
-#while ((num1 < 500))
-#do
-  #dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/random_data/2K-$num1 count=2 bs=1024
-  #dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/random_data/4K-$num1 count=4 bs=1024
-  #dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/random_data/8K-$num1 count=8 bs=1024
-  #dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/random_data/16K-$num1 count=16 bs=1024
-  #dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/random_data/32K-$num1 count=32 bs=1024
- # num1=$(($num1+1))
-#done
-
-while (($num2 < 300))
-do
-  dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/random_data/64K-$num2 count=64 bs=1024
-  dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/random_data/128K-$num2 count=128 bs=1024
-  dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/random_data/256K-$num2 count=256 bs=1024
-  dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/random_data/512K-$num2 count=512 bs=1024
-  num2=$(($num2+1))
-done
-
-while (($num3 < 60))
-do
-  dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/random_data/1M-$num3 count=1024 bs=1024
-  dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/random_data/2M-$num3 count=2048 bs=1024
-  dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/random_data/4M-$num3 count=4096 bs=1024
-  dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/random_data/8M-$num3 count=8192 bs=1024
-  dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/random_data/16M-$num3 count=16384 bs=1024
-  num3=$(($num3+1))
-done
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/2K count=2 bs=1024
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/4K count=4 bs=1024
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/8K count=8 bs=1024
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/16K count=16 bs=1024
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/32K count=32 bs=1024
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/64K count=64 bs=1024
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/128K count=128 bs=1024
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/256K count=256 bs=1024
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/512K count=512 bs=1024
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/1M count=1024 bs=1024
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/2M count=2048 bs=1024
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/4M count=4096 bs=1024
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/8M count=8192 bs=1024
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/16M count=16384 bs=1024
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/32M count=32768 bs=1024
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/64M count=32768 bs=2048
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/128M count=32768 bs=4096
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/256M count=32768 bs=8192
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/512M count=32768 bs=16384
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/1024M count=32768 bs=32768
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/2048M count=65536 bs=32768
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/4096M count=65536 bs=65536
+dd if=/dev/urandom of=/home/ly/fhw/data_fhw3/urandom/8192M count=131072 bs=65536
