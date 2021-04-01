@@ -1,5 +1,9 @@
 # Generate_similar_file
 generate similar file with 
 
+#compile generate_dup.c:
+gcc -o generate_dup generate_dup.c
+
 #运行generate_dup.sh脚本文件
-./generate_dup.sh 原始文件目录 输出文件目录
+chmod +x generate_dup.sh
+./generate_dup.sh input_dirname output_dirname
